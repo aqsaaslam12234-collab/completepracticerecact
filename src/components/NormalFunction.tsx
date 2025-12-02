@@ -32,9 +32,13 @@
 
 // Function with perametr and  arrow function
 function Hey() {
+
   const getName = (yourname: string) => {
     return yourname;
   };
+  function handelClick(){
+    alert("Button was Clicked!")
+  }
 
   const name = "Aqsa Aslam";
   const name1 = "Hadia Harmain";
@@ -43,6 +47,9 @@ function Hey() {
     <div>
       <h1>First Name: {getName(name)}</h1>
       <h2>Last Name: {getName(name1)}</h2>
+      <br />
+      <button className="bg-amber-500 w-20 h-10" onClick={handelClick}>Click Me</button>
+      <button>Say Hey</button>
     </div>
   );
 }
